@@ -1,0 +1,16 @@
+/node_modules/
+/.vscode/
+/plugins/
+/.firebase/
+.firebaserc
+firebase.json
+/draft/
+
+
+read_me.txt
+
+# production
+/build/
+
+# for server imitation
+server.php

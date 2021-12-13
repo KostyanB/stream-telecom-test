@@ -1,0 +1,19 @@
+/* шрифты*/
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+        local('Roboto-Regular'),
+        url('fonts/Roboto.woff2') format('woff2'),
+        url('fonts/Roboto.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'),
+        local('Roboto-Bold'),
+        url('fonts/Robotobold.woff2') format('woff2'),
+        url('fonts/Robotobold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

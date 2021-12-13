@@ -1,0 +1,52 @@
+/* global styles*/
+body {
+  font: {
+    family: Roboto;
+    style: normal;
+    weight: 400;
+    size: 16px;
+  }
+  color: $blue02;
+  min-width: 320px;
+}
+
+.container {
+  width: min(100%, 1366px);
+  margin: 0 auto;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 56px;
+  background-color: $blue04;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  color: $white;
+
+  &:hover,
+  &:active {
+    background-color: $blue03;
+  }
+
+  &:hover {
+    color: $blue05;
+  }
+
+  &:active {
+    color: $blue01;
+  }
+
+  &:disabled {
+    background-color: gray;
+    color: lightgray;
+
+    &:hover,
+    &:active {
+      background-color: gray;
+      color: lightgray;
+    }
+  }
+}
