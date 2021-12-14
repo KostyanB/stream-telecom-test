@@ -5,7 +5,7 @@ const validForm = () => {
   const formLabel = document.querySelector('.data-form__label');
 
   const validNotEmptyForm = form => [...form].slice(0, form.length - 1)
-    .every(item => item.value !== '');
+    .every(item => item.value.trim() !== '');
 
   const validation = () => {
     if (validNotEmptyForm(dataForm)) {

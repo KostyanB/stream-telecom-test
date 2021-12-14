@@ -12,6 +12,12 @@ const handleForm = () => {
     renderArea();
   };
 
+  const resetForm = () => {
+    form.reset();
+    localStore.clearStore();
+    renderArea();
+  }
+
   const sendForm = (e) => {
     e.preventDefault();
     const data = createNewData(area.value);
@@ -22,7 +28,7 @@ const handleForm = () => {
       globalStore.setStore(data);
     }
 
-    showData();
+    resetForm();
   };
 
   form.addEventListener('submit', sendForm);

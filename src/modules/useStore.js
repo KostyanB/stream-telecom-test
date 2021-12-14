@@ -15,4 +15,10 @@ class Store {
 
 export const globalStore = new Store();
 
-export const localStore = new Store();
+class Local extends Store {
+  clearStore() {
+    this.store.length = 0;
+  }
+}
+
+export const localStore = new Local();
