@@ -1,4 +1,13 @@
-/* global styles*/
+$text: rgb(112, 168, 245);
+$background: rgb(26, 53, 91);
+$blue01: rgb(31, 63, 104);
+$blue03: rgb(53, 110, 173);
+$blue04: rgb(90, 152, 208);
+$blue05: rgb(152, 195, 232);
+$white: #FFF;
+$gray: rgb(128, 128, 128);
+$lightgray: rgb(228, 228, 228);
+
 body {
   font: {
     family: Roboto;
@@ -6,13 +15,20 @@ body {
     weight: 400;
     size: 16px;
   }
-  color: $blue02;
+  line-height: 1.5;
+  color: $text;
   min-width: 320px;
+  background-color: $background;
 }
 
 .container {
-  width: min(100%, 1366px);
+  width: min(100%, 500px);
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
 }
 
 .main-button {
@@ -24,6 +40,7 @@ body {
   background-color: $blue04;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
+  font: inherit;
   color: $white;
 
   &:hover,
@@ -40,13 +57,24 @@ body {
   }
 
   &:disabled {
-    background-color: gray;
-    color: lightgray;
+    background-color: $gray;
+    color: $lightgray;
 
     &:hover,
     &:active {
-      background-color: gray;
-      color: lightgray;
+      background-color: $gray;
+      color: $lightgray;
     }
   }
+}
+
+.handler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
 }

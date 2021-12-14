@@ -1,0 +1,26 @@
+.data-form {
+  display: grid;
+
+  &__label {
+    grid-area: 1/-1;
+    background: transparent;
+    padding: 40px;
+    color: gray;
+    opacity: .7;
+
+
+  }
+  &__label-text {
+    padding-left: 15px;
+
+  }
+
+  &__area {
+    grid-area: 1/-1;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    font: inherit;
+    color: inherit;
+  }
+}

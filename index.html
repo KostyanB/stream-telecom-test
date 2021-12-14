@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SmartTelecom Test</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://Stream Telecom Test</title>
 	<link rel="icon" type="image/png" href="img/icon.png">
 </head>
-
 <body>
+  <div class="container">
+    <form name="data-form" id="data-form" class="data-form">
+      <label for="data-field" class="data-form__label">
+        <span>[</span><br>
+        <span class="data-form__label-text">{ "name": "...", "value": "..."},</span><br>
+        <span class="data-form__label-text">{ "name": "...", "value": "..."}</span><br>
+        <span>]</span>
+      </label>
+      <textarea name="data-field" id="data-field" class="data-form__area" cols="50" rows="20"></textarea>
+    </form>
+    <div class="handler">
+      <button class="main-button" id="show-btn">
+        Показать
+      </button>
+      <button type="submit" form="data-form" class="main-button">
+        Сохранить
+      </button>
+    </div>
+  </div>
 
 </body>
-
 </html>
