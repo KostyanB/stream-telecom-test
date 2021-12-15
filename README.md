@@ -1,6 +1,7 @@
 # "StreamTelecom" Тестовое задание
 
-Редактор данных
+Редактор данных JSON.
+Комментарии в целом по тестовому в [taskSolution](https://github.com/KostyanB/stream-telecom-test#)
 
 ## О приложениии
 
